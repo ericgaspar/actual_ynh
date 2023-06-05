@@ -1,13 +1,14 @@
 [Unit]
-Description=Small description of the service
+Description=Actual
 After=network.target
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
+Environment="NODE_ENV=production"
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/script
+ExecStart=/usr/bin/yarn start
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 
