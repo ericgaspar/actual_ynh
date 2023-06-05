@@ -1,5 +1,5 @@
 {
     "port": "__PORT__",
-    "serverFiles": "__DATA_DIR__/user-files",
-    "userFiles": "__DATA_DIR__",
+    "serverFiles": "__DATA_DIR__/server-files",
+    "userFiles": "__DATA_DIR__/user-files"
 }
